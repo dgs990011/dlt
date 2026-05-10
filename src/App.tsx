@@ -264,7 +264,7 @@ const apps: AppItem[] = [
     downloads: '55万+',
   },
   {
-    id: 'app17',
+    id: 'app18',
     name: '赏金国际',
     tagline: '',
     description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
@@ -274,7 +274,7 @@ const apps: AppItem[] = [
     rating: 4.7,
     downloads: '55万+',
   }, {
-    id: 'app18',
+    id: 'app19',
     name: '亿万28',
     tagline: '',
     description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
@@ -285,7 +285,7 @@ const apps: AppItem[] = [
     downloads: '55万+',
   },
      {
-    id: 'app202',
+    id: 'app20',
     name: '领航国际',                                                                                                             // 应用名称
     tagline: '',                                                                                                                   // 副标语（可填写，留空则不显示）
     description: '用看板与时间轴掌控每一个项目进度，让团队协作更流畅。',
@@ -297,7 +297,7 @@ const apps: AppItem[] = [
     downloads: '120万+',
   },
   {
-    id: 'app19',
+    id: 'app21',
     name: '多多28',
     tagline: '',
     description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
@@ -308,7 +308,7 @@ const apps: AppItem[] = [
     downloads: '55万+',
   },
  {
-    id: 'app21',
+    id: 'app22',
     name: '旺财28',
     tagline: '',
     description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
@@ -318,7 +318,7 @@ const apps: AppItem[] = [
     rating: 4.7,
     downloads: '55万+',
   }, {
-    id: 'app22',
+    id: 'app23',
     name: '28圈',
     tagline: '',
     description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
