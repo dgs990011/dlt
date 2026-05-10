@@ -252,6 +252,17 @@ const apps: AppItem[] = [
     rating: 4.7,
     downloads: '55万+',
   },
+   {
+    id: 'app17',
+    name: '保时捷',
+    tagline: '',
+    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
+    category: 'entertainment',
+    imageUrl: 'https://pic1.imgdb.cn/item/68dbfe46c5157e1a884b253c.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
+    linkUrl: 'https://bsjh5.agrleo.com/app/register.php?site_id=134523275&topId=82386',                                          // 点击跳转链接
+    rating: 4.7,
+    downloads: '55万+',
+  },
   {
     id: 'app17',
     name: '赏金国际',
