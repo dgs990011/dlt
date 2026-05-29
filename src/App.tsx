@@ -7,16 +7,12 @@ import { Grid3x3 as Grid3X3, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // 单个应用卡片的数据结构
 interface AppItem {
-  id: string;           // 唯一标识符
-  name: string;         // 应用名称
-  tagline: string;      // 应用副标语
-  description: string;  // 应用详细描述
-  category: string;     // 所属分类ID
-  imageUrl: string;     // 封面图片链接
-  linkUrl: string;      // 点击跳转链接
-  badge?: string;       // 可选徽章文字（如"热门推荐"）
-  rating?: number;      // 可选评分
-  downloads?: string;   // 可选下载量文字
+  id: string;      // 唯一标识符
+  name: string;    // 应用名称
+  tagline: string; // 应用副标语
+  imageUrl: string; // 封面图片链接
+  linkUrl: string;  // 点击跳转链接
+  badge?: string;   // 可选徽章文字（如"热门推荐"）
 }
 
 // 轮播横幅的数据结构
@@ -76,256 +72,164 @@ const banners: BannerItem[] = [
 const apps: AppItem[] = [
   {
     id: 'app1',
-    name: '非凡娱乐',                                                                                                             // 应用名称
-    tagline: '',                                                                                                                   // 副标语（可填写，留空则不显示）
-    description: '用看板与时间轴掌控每一个项目进度，让团队协作更流畅。',
-    category: 'productivity',
-    imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176fd.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://bakmry.gziasti.com/app/register.php?site_id=1050&topId=880722&selfPlanId=855049',        // 点击跳转链接
-                                                                                                           // 徽章文字（可选值：热门推荐 / 新品上线 / 强烈推荐，删除此行则不显示徽章）
-    rating: 4.9,
-    downloads: '120万+',
+    name: '非凡娱乐',
+    tagline: '',
+    imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176fd.jpg',
+    linkUrl: 'https://bakmry.gziasti.com/app/register.php?site_id=1050&topId=880722&selfPlanId=855049',
   },
   {
     id: 'app2',
     name: '梦想国际',
     tagline: '',
-    description: '矢量绘图、UI设计、原型制作一体化，释放你的创作潜能。',
-    category: 'creative',
-    imageUrl: 'https://pic1.imgdb.cn/item/69df01c6f76f4dd14b4c2858.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://mgokgd.jgqvji.com/app/register.php?site_id=1061&pt=08A0E1AF-96B3-A9C8-6E51-1D02FD14ABAC',                 // 点击跳转链接
-    rating: 4.8,
-    downloads: '85万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/69df01c6f76f4dd14b4c2858.jpg',
+    linkUrl: 'https://mgokgd.jgqvji.com/app/register.php?site_id=1061&pt=08A0E1AF-96B3-A9C8-6E51-1D02FD14ABAC',
   },
   {
     id: 'app3',
     name: '君临国际',
     tagline: '',
-    description: '端对端加密，零广告，保护每一条私信的安全与隐私。',
-    category: 'social',
-    imageUrl: 'https://pic1.imgdb.cn/item/695248a74b4fb88febf26626.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://tfajn.hcjwj.com/app/register.php?site_id=2081&topId=23647&selfPlanId=6413',                               // 点击跳转链接
-    rating: 4.7,
-    downloads: '300万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/695248a74b4fb88febf26626.jpg',
+    linkUrl: 'https://tfajn.hcjwj.com/app/register.php?site_id=2081&topId=23647&selfPlanId=6413',
   },
   {
     id: 'app4',
     name: '汇赢国际',
     tagline: '',
-    description: '智能追踪收支、投资组合与目标储蓄，让财务清晰可见。',
-    category: 'finance',
-    imageUrl: 'https://pic1.imgdb.cn/item/69da7d4e757fdade5eafac10.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://ncgca.tprsmi.com/app/register.php?site_id=1062&topId=13593&selfPlanId=918',                               // 点击跳转链接
-    rating: 4.6,
-    downloads: '60万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/69da7d4e757fdade5eafac10.jpg',
+    linkUrl: 'https://ncgca.tprsmi.com/app/register.php?site_id=1062&topId=13593&selfPlanId=918',
   },
-   {
+  {
     id: 'app5',
     name: '365体育汇',
     tagline: '',
-    description: '智能追踪收支、投资组合与目标储蓄，让财务清晰可见。',
-    category: 'finance',
-    imageUrl: 'https://pic1.imgdb.cn/item/69f360d40b8cf5f62932d2a3.png',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://www.365t28.com:30123/entry/register/?i_code=5342640',                               // 点击跳转链接
-    rating: 4.6,
-    downloads: '60万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/69f360d40b8cf5f62932d2a3.png',
+    linkUrl: 'https://www.365t28.com:30123/entry/register/?i_code=5342640',
   },
   {
     id: 'app6',
     name: 'top1体育',
     tagline: '',
-    description: '睡眠、运动、冥想一体化追踪，科学指导你的健康生活。',
-    category: 'health',
-    imageUrl: 'https://i.postimg.cc/FzGDYZpB/xin-TOP-ti-yu.jpg',                                                                 // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://bakmry.gziasti.com/app/register.php?site_id=1051&topId=457911',                                            // 点击跳转链接
-    rating: 4.8,
-    downloads: '200万+',
+    imageUrl: 'https://i.postimg.cc/FzGDYZpB/xin-TOP-ti-yu.jpg',
+    linkUrl: 'https://bakmry.gziasti.com/app/register.php?site_id=1051&topId=457911',
   },
   {
     id: 'app7',
     name: '新时代',
     tagline: '',
-    description: '整合多平台片单，支持离线缓存，随时随地享受高清内容。',
-    category: 'entertainment',
-    imageUrl: 'https://i.postimg.cc/t4SjcBzw/xin-shi-dai.jpg',                                                                   // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://derear.fnbpsw.com/app/register.php?site_id=1059&topId=82351&selfPlanId=144338',                            // 点击跳转链接
-    rating: 4.5,
-    downloads: '150万+',
+    imageUrl: 'https://i.postimg.cc/t4SjcBzw/xin-shi-dai.jpg',
+    linkUrl: 'https://derear.fnbpsw.com/app/register.php?site_id=1059&topId=82351&selfPlanId=144338',
   },
   {
     id: 'app8',
     name: '问鼎娱乐',
     tagline: '',
-    description: '双向链接、AI摘要、多端同步，构建你的第二大脑。',
-    category: 'productivity',
-    imageUrl: 'https://i.postimg.cc/FR5hjNf0/wen-ding-guo-ji.webp',                                                        // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://onkrcy.hefaship.com/app/register.php?site_id=1020&topId=21543657',                                         // 点击跳转链接
-    rating: 4.9,
-    downloads: '95万+',
+    imageUrl: 'https://i.postimg.cc/FR5hjNf0/wen-ding-guo-ji.webp',
+    linkUrl: 'https://onkrcy.hefaship.com/app/register.php?site_id=1020&topId=21543657',
   },
   {
     id: 'app9',
     name: '壹号娱乐',
     tagline: '',
-    description: '从图片提取调色板，AI生成配色方案，一键导出设计规范。',
-    category: 'creative',
-    imageUrl: 'https://pic1.imgdb.cn/item/688c1d0e58cb8da5c8f69d21.webp',                                                        // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://gfvgx.jgqvji.com/app/register.php?site_id=800&pt=20784FBB-9EDA-E1C7-A955-C82CA771D0F3',                   // 点击跳转链接
-    rating: 4.7,
-    downloads: '40万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/688c1d0e58cb8da5c8f69d21.webp',
+    linkUrl: 'https://gfvgx.jgqvji.com/app/register.php?site_id=800&pt=20784FBB-9EDA-E1C7-A955-C82CA771D0F3',
   },
   {
     id: 'app10',
     name: '胜天国际',
     tagline: '',
-    description: '基于兴趣标签匹配，加入同频圈子，发现真实的人与故事。',
-    category: 'social',
-    imageUrl: 'https://pic1.imgdb.cn/item/6937c17f00233646958cd102.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://tfajn.hcjwj.com/app/register.php?site_id=1058&topId=26442&selfPlanId=1692',                               // 点击跳转链接
-    rating: 4.4,
-    downloads: '180万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/6937c17f00233646958cd102.jpg',
+    linkUrl: 'https://tfajn.hcjwj.com/app/register.php?site_id=1058&topId=26442&selfPlanId=1692',
   },
   {
     id: 'app11',
     name: '超凡国际',
     tagline: '',
-    description: '多交易所聚合行情、智能预警与持仓分析，把握市场脉搏。',
-    category: 'finance',
-    imageUrl: 'https://pic1.imgdb.cn/item/68692e6558cb8da5c89176f7.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://pkajim.hfjcl.com/app/register.php?site_id=1032&topId=1056008',                                             // 点击跳转链接
-    rating: 4.6,
-    downloads: '75万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/68692e6558cb8da5c89176f7.jpg',
+    linkUrl: 'https://pkajim.hfjcl.com/app/register.php?site_id=1032&topId=1056008',
   },
   {
     id: 'app12',
     name: '东升国际',
     tagline: '',
-    description: '精选冥想课程与呼吸练习，帮助你减压、专注、更好入睡。',
-    category: 'health',
-    imageUrl: 'https://pic1.imgdb.cn/item/68692e6758cb8da5c89176fe.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://tz.wx-zxivoq2.com/app/register.php?site_id=2173&topId=1090266',                                            // 点击跳转链接
-    rating: 4.8,
-    downloads: '110万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/68692e6758cb8da5c89176fe.jpg',
+    linkUrl: 'https://tz.wx-zxivoq2.com/app/register.php?site_id=2173&topId=1090266',
   },
   {
     id: 'app13',
     name: '征途国际',
     tagline: '',
-    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
-    category: 'entertainment',
-    imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176fc.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://pkajim.hfjcl.com/app/register.php?site_id=1031&topId=1890399',                                             // 点击跳转链接
-    rating: 4.7,
-    downloads: '55万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176fc.jpg',
+    linkUrl: 'https://pkajim.hfjcl.com/app/register.php?site_id=1031&topId=1890399',
   },
   {
     id: 'app14',
     name: '巅峰国际',
     tagline: '',
-    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
-    category: 'entertainment',
-    imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176f8.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://gfvgx.jgqvji.com/app/register.php?site_id=1030&topId=1744632',                                             // 点击跳转链接
-    rating: 4.7,
-    downloads: '55万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176f8.jpg',
+    linkUrl: 'https://gfvgx.jgqvji.com/app/register.php?site_id=1030&topId=1744632',
   },
   {
     id: 'app15',
     name: 'NG南宫',
     tagline: '',
-    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
-    category: 'entertainment',
-    imageUrl: 'https://pic1.imgdb.cn/item/689dd5ec58cb8da5c8251893.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://149.30.163.235:32011/#/link?allwin=BT8jp798vc163kFA9xyh2g%3D%3D',                                          // 点击跳转链接
-    rating: 4.7,
-    downloads: '55万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/689dd5ec58cb8da5c8251893.jpg',
+    linkUrl: 'https://149.30.163.235:32011/#/link?allwin=BT8jp798vc163kFA9xyh2g%3D%3D',
   },
-   {
+  {
     id: 'app16',
     name: 'NG体育',
     tagline: '',
-    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
-    category: 'entertainment',
-    imageUrl: 'https://pic1.imgdb.cn/item/68b3af8358cb8da5c8655b32.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://nvjmce.hfjcl.com/app/register.php?site_id=1019&topId=10325130',                                          // 点击跳转链接
-    rating: 4.7,
-    downloads: '55万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/68b3af8358cb8da5c8655b32.jpg',
+    linkUrl: 'https://nvjmce.hfjcl.com/app/register.php?site_id=1019&topId=10325130',
   },
-   {
+  {
     id: 'app17',
     name: '保时捷',
     tagline: '',
-    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
-    category: 'entertainment',
-    imageUrl: 'https://pic1.imgdb.cn/item/68dbfe46c5157e1a884b253c.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://bsjh5.agrleo.com/app/register.php?site_id=134523275&topId=82386',                                          // 点击跳转链接
-    rating: 4.7,
-    downloads: '55万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/68dbfe46c5157e1a884b253c.jpg',
+    linkUrl: 'https://bsjh5.agrleo.com/app/register.php?site_id=134523275&topId=82386',
   },
   {
     id: 'app18',
     name: '赏金国际',
     tagline: '',
-    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
-    category: 'entertainment',
-    imageUrl: 'https://pic1.imgdb.cn/item/688c1d0e58cb8da5c8f69d23.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://xjvueb.hefaship.com/app/register.php?site_id=1010&topId=3094701',                                          // 点击跳转链接
-    rating: 4.7,
-    downloads: '55万+',
-  }, {
+    imageUrl: 'https://pic1.imgdb.cn/item/688c1d0e58cb8da5c8f69d23.jpg',
+    linkUrl: 'https://xjvueb.hefaship.com/app/register.php?site_id=1010&topId=3094701',
+  },
+  {
     id: 'app19',
     name: '亿万28',
     tagline: '',
-    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
-    category: 'entertainment',
-    imageUrl: 'https://pic1.imgdb.cn/item/68a570b358cb8da5c83d12f9.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://xjvueb.hefaship.com/app/register.php?site_id=1017&topId=7061046',                                          // 点击跳转链接
-    rating: 4.7,
-    downloads: '55万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/68a570b358cb8da5c83d12f9.jpg',
+    linkUrl: 'https://xjvueb.hefaship.com/app/register.php?site_id=1017&topId=7061046',
   },
-     {
+  {
     id: 'app20',
-    name: '领航国际',                                                                                                             // 应用名称
-    tagline: '',                                                                                                                   // 副标语（可填写，留空则不显示）
-    description: '用看板与时间轴掌控每一个项目进度，让团队协作更流畅。',
-    category: 'productivity',
-    imageUrl: 'https://pic1.imgdb.cn/item/69f4835ec16184acf99e4245.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://rsesra.hfjcl.com/app/register.php?site_id=1064&pt=FA9067F8-D104-5451-A6AB-960962BAB808',        // 点击跳转链接
-                                                                                                           // 徽章文字（可选值：热门推荐 / 新品上线 / 强烈推荐，删除此行则不显示徽章）
-    rating: 4.9,
-    downloads: '120万+',
+    name: '领航国际',
+    tagline: '',
+    imageUrl: 'https://pic1.imgdb.cn/item/69f4835ec16184acf99e4245.jpg',
+    linkUrl: 'https://rsesra.hfjcl.com/app/register.php?site_id=1064&pt=FA9067F8-D104-5451-A6AB-960962BAB808',
   },
   {
     id: 'app21',
     name: '多多28',
     tagline: '',
-    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
-    category: 'entertainment',
-    imageUrl: 'https://pic1.imgdb.cn/item/686f644658cb8da5c899de0b.png',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://wlkyiy.paradisemall.net/app/register.php?site_id=1021&topId=5519693',                                          // 点击跳转链接
-    rating: 4.7,
-    downloads: '55万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/686f644658cb8da5c899de0b.png',
+    linkUrl: 'https://wlkyiy.paradisemall.net/app/register.php?site_id=1021&topId=5519693',
   },
- {
+  {
     id: 'app22',
     name: '旺财28',
     tagline: '',
-    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
-    category: 'entertainment',
-    imageUrl: 'https://pic1.imgdb.cn/item/68b3af7e58cb8da5c8655b00.png',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://wlkyiy.paradisemall.net/app/register.php?site_id=1012&topId=3926701',                                          // 点击跳转链接
-    rating: 4.7,
-    downloads: '55万+',
-  }, {
+    imageUrl: 'https://pic1.imgdb.cn/item/68b3af7e58cb8da5c8655b00.png',
+    linkUrl: 'https://wlkyiy.paradisemall.net/app/register.php?site_id=1012&topId=3926701',
+  },
+  {
     id: 'app23',
     name: '28圈',
     tagline: '',
-    description: '专业采样、混音、母带处理，在手机上完成专辑级别的创作。',
-    category: 'entertainment',
-    imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176f9.jpg',                                                         // 应用封面图片（替换此URL可更换图片）
-    linkUrl: 'https://149.30.163.235:32011/#/link?allwin=BT8jp798vc163kFA9xyh2g%3D%3D',                                          // 点击跳转链接
-    rating: 4.7,
-    downloads: '55万+',
+    imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176f9.jpg',
+    linkUrl: 'https://149.30.163.235:32011/#/link?allwin=BT8jp798vc163kFA9xyh2g%3D%3D',
   },
 ];
 
