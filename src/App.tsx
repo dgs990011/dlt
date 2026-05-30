@@ -70,13 +70,7 @@ const banners: BannerItem[] = [
 // ════════════════════════════════════════════
 
 const apps: AppItem[] = [
-          {
-      id: 'app1',
-      name: '戴高乐',
-      tagline: '',
-      imageUrl: 'https://pic1.imgdb.cn/item/6a16f2efcf685663461371d7.jpg',
-      linkUrl: 'https://hbffbr.hcjwj.com/app/register.php?site_id=2091&topId=79040'
-    }, 
+   
   {
     id: 'app1',
     name: '非凡娱乐',
@@ -238,6 +232,13 @@ const apps: AppItem[] = [
     imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176f9.jpg',
     linkUrl: 'https://149.30.163.235:32011/#/link?allwin=BT8jp798vc163kFA9xyh2g%3D%3D',
   },
+         {
+      id: 'app1',
+      name: '戴高乐',
+      tagline: '筹备开业，敬请期待。',
+      imageUrl: 'https://pic1.imgdb.cn/item/6a16f2efcf685663461371d7.jpg',
+      linkUrl: 'https://hbffbr.hcjwj.com/app/register.php?site_id=2091&topId=79040'
+    }, 
 ];
 
 // ════════════════════════════════════════════
