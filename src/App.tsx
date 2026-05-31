@@ -311,11 +311,11 @@ function AppCard({ app }: { app: AppItem }) {
         </div>
         {/* 名称区：内嵌在卡片下方 */}
         <div className="px-1.5 py-1.5 border-t border-gray-100">
-          <p className="text-[10px] font-semibold text-gray-800 leading-tight line-clamp-1">
+          <p className="text-[10px] font-semibold text-gray-800 leading-tight break-words">
             {app.name}
           </p>
           {app.tagline && (
-            <p className="text-[8px] text-gray-400 leading-tight line-clamp-1 mt-0.5">
+            <p className="text-[8px] text-gray-400 leading-tight mt-0.5">
               {app.tagline}
             </p>
           )}
