@@ -242,7 +242,7 @@ const apps: AppItem[] = [
         {
       id: 'app1',
       name: '聚鑫汇',
-      tagline: '6月5号开业发百万红包',
+      tagline: '',
       imageUrl: 'https://pic1.imgdb.cn/item/6a1b8d64172c6dd74dd826b9.jpg',
       linkUrl: 'https://ybkvbz.tckqxx.com/app/register.php?site_id=1066&topId=27475&selfPlanId=1330'
     }, 
