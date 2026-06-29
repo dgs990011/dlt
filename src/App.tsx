@@ -123,7 +123,7 @@ const apps: AppItem[] = [
     id: 'app7',
     name: '365体育汇',
     tagline: '',
-    imageUrl: 'https://pic1.imgdb.cn/item/6a3d3f02bb21102f81d61193.jpg',
+    imageUrl: 'https://pic1.imgdb.cn/item/69f360d40b8cf5f62932d2a3.png',
     linkUrl: 'https://www.365t28.com:30123/entry/register/?i_code=5342640',
   },
   {
@@ -245,7 +245,13 @@ const apps: AppItem[] = [
     imageUrl: 'https://pic1.imgdb.cn/item/68b3af7e58cb8da5c8655b00.png',
     linkUrl: 'https://wlkyiy.paradisemall.net/app/register.php?site_id=1012&topId=3926701',
   },
-
+  {
+    id: 'app26',
+    name: '28圈',
+    tagline: '',
+    imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176f9.jpg',
+    linkUrl: 'https://149.30.163.235:32011/#/link?allwin=BT8jp798vc163kFA9xyh2g%3D%3D',
+  },
   
 ];
 
