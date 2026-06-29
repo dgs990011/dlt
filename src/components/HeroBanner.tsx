@@ -1,12 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { BannerItem } from '../types';
+import type { BannerItem } from '../types';
 
-interface HeroBannerProps {
-  banners: BannerItem[];
-}
-
-export default function HeroBanner({ banners }: HeroBannerProps) {
+export default function HeroBanner({ banners }: { banners: BannerItem[] }) {
   const [current, setCurrent] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -38,11 +34,7 @@ export default function HeroBanner({ banners }: HeroBannerProps) {
           }`}
           tabIndex={i === current ? 0 : -1}
         >
-          <img
-            src={b.imageUrl}
-            alt={b.title}
-            className="absolute inset-0 w-full h-full object-cover object-center"
-          />
+          <img src={b.imageUrl} alt={b.title} className="absolute inset-0 w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
         </a>
       ))}
@@ -56,9 +48,7 @@ export default function HeroBanner({ banners }: HeroBannerProps) {
             >
               精选推荐
             </div>
-            <h1 className="text-lg md:text-2xl font-bold text-white leading-snug mb-1">
-              {banner.title}
-            </h1>
+            <h1 className="text-lg md:text-2xl font-bold text-white leading-snug mb-1">{banner.title}</h1>
             <p className="text-white/75 text-xs md:text-sm">{banner.subtitle}</p>
           </div>
         </div>
@@ -88,7 +78,6 @@ export default function HeroBanner({ banners }: HeroBannerProps) {
       >
         <ChevronRight size={14} />
       </button>
-
     </section>
   );
 }

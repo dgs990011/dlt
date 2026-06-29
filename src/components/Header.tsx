@@ -21,11 +21,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <div className="w-7 h-7 rounded-lg overflow-hidden flex items-center justify-center bg-gray-900 flex-shrink-0">
             {siteConfig.logoUrl ? (
-              <img
-                src={siteConfig.logoUrl}
-                alt={siteConfig.name}
-                className="w-full h-full object-cover"
-              />
+              <img src={siteConfig.logoUrl} alt={siteConfig.name} className="w-full h-full object-cover" />
             ) : (
               <Grid3X3 size={14} className="text-white" />
             )}

@@ -1,4 +1,4 @@
-import { BannerItem } from '../types';
+import type { BannerItem } from '../types';
 
 export const siteConfig = {
   name: 'NG集团',
@@ -46,3 +46,9 @@ export const footerLinks = [
     items: ['关于我们', '联系我们', '隐私政策', '服务条款'],
   },
 ];
+
+export const badgeColors: Record<string, string> = {
+  '强烈推荐': 'bg-sky-500',
+  '新品上线': 'bg-emerald-500',
+  '热门推荐': 'bg-rose-500',
+};

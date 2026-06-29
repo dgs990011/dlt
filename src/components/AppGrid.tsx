@@ -1,11 +1,7 @@
-import { AppItem } from '../types';
+import type { AppItem } from '../types';
 import AppCard from './AppCard';
 
-interface AppGridProps {
-  apps: AppItem[];
-}
-
-export default function AppGrid({ apps }: AppGridProps) {
+export default function AppGrid({ apps }: { apps: AppItem[] }) {
   if (apps.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-24 text-gray-400">
@@ -16,11 +12,11 @@ export default function AppGrid({ apps }: AppGridProps) {
   }
 
   return (
-    <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-4 md:gap-5">
+    <div className="grid grid-cols-5 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 md:gap-3">
       {apps.map((app, i) => (
         <div
           key={app.id}
-          style={{ animationDelay: `${i * 50}ms`, animation: 'fadeIn 0.4s ease forwards', opacity: 0 }}
+          style={{ animationDelay: `${i * 40}ms`, animation: 'fadeIn 0.4s ease forwards', opacity: 0 }}
         >
           <AppCard app={app} />
         </div>

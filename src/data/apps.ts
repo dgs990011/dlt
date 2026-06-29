@@ -1,19 +1,19 @@
-import { AppItem } from '../types';
+import type { AppItem } from '../types';
 
 export const apps: AppItem[] = [
-  {
-    id: 'app17',
-    name: '龙腾国际',
-    tagline: '',
-    imageUrl: 'https://pic1.imgdb.cn/item/6a23ec2f0c24090b1026d76e.jpg',
-    linkUrl: 'https://psktkx.tckqxx.com/app/register.php?site_id=1065&topId=27266&selfPlanId=896',
-  },
   {
     id: 'app1',
     name: '聚鑫汇',
     tagline: '',
     imageUrl: 'https://pic1.imgdb.cn/item/6a1b8d64172c6dd74dd826b9.jpg',
     linkUrl: 'https://ybkvbz.tckqxx.com/app/register.php?site_id=1066&topId=27475&selfPlanId=1330',
+  },
+  {
+    id: 'app17',
+    name: '龙腾国际',
+    tagline: '',
+    imageUrl: 'https://pic1.imgdb.cn/item/6a23ec2f0c24090b1026d76e.jpg',
+    linkUrl: 'https://psktkx.tckqxx.com/app/register.php?site_id=1065&topId=27266&selfPlanId=896',
   },
   {
     id: 'app2',
@@ -54,7 +54,7 @@ export const apps: AppItem[] = [
     id: 'app7',
     name: '365体育汇',
     tagline: '',
-    imageUrl: 'https://pic1.imgdb.cn/item/69f360d40b8cf5f62932d2a3.png',
+    imageUrl: 'https://pic1.imgdb.cn/item/6a3d3f02bb21102f81d61193.jpg',
     linkUrl: 'https://www.365t28.com:30123/entry/register/?i_code=5342640',
   },
   {
@@ -175,12 +175,5 @@ export const apps: AppItem[] = [
     tagline: '',
     imageUrl: 'https://pic1.imgdb.cn/item/68b3af7e58cb8da5c8655b00.png',
     linkUrl: 'https://wlkyiy.paradisemall.net/app/register.php?site_id=1012&topId=3926701',
-  },
-  {
-    id: 'app26',
-    name: '28圈',
-    tagline: '',
-    imageUrl: 'https://pic1.imgdb.cn/item/68692e6658cb8da5c89176f9.jpg',
-    linkUrl: 'https://149.30.163.235:32011/#/link?allwin=BT8jp798vc163kFA9xyh2g%3D%3D',
   },
 ];
